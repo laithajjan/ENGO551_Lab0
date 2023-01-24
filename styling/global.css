@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  font-family: "Verdana";
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+/* Parent class for elements that have the same styles */
+.nav-list-item, .nav__list-destination, .nav__list-header {
+  text-decoration: none;
+  color: #335576;
+  padding: 0.5rem 0;
+  transition: border-bottom 0.33s;
+}
+.nav-list-item:link, .nav__list-destination:link, .nav__list-header:link, .nav-list-item:visited, .nav__list-destination:visited, .nav__list-header:visited {
+  text-decoration: none;
+  color: #335576;
+  padding: 0.5rem 0;
+  transition: border-bottom 0.33s;
+}
+.nav-list-item:hover, .nav__list-destination:hover, .nav__list-header:hover, .nav-list-item:active, .nav__list-destination:active, .nav__list-header:active {
+  border-bottom: 2px solid #db7a4e;
+}
+.nav-list-item--visited {
+  border-bottom: 2px solid #db7a4e;
+}
+
+/* Header and navigation bar styling */
+.header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    background-color: lightblue;
+  }
+}
+.nav {
+  max-width: 63%;
+  padding: 2rem 3rem;
+  margin: auto;
+}
+
+.nav__list {
+  font-weight: 400;
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+.nav__list li:first-child {
+  margin-right: auto;
+}
+
+.nav__list-header {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 700px) {
+  .body {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .body {
+    width: 100%;
+  }
+}
+/* Mixin for common footer styles */
+/* Define global styles for the footer */
+.footer {
+  background-color: #fefaf5;
+  padding: 4rem;
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Define styles for the footer container */
+  /* Define styles for the footer sections */
+}
+.footer__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10rem;
+  flex-direction: row;
+}
+.footer__section {
+  flex-basis: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  padding: 2rem;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 2px 2px 20px #ccc;
+  text-align: center;
+  /* Define styles for the section container */
+  /* Define styles for the section title */
+  /* Define styles for the section tag */
+  /* Define styles for the section information */
+  /* Define styles for the social icons */
+}
+.footer__section-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.footer__section-title {
+  font-size: 2.5rem;
+  color: #335576;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.footer__section-tag {
+  text-transform: uppercase;
+  color: #db7a4e;
+  margin-bottom: 1rem;
+}
+.footer__section-information {
+  color: #335576;
+  font-size: 1.5rem;
+  font-style: normal;
+}
+.footer__section-icon {
+  margin-top: 20px;
+  max-width: 2.4rem;
+  max-height: 2.4rem;
+}/*# sourceMappingURL=global.css.map */

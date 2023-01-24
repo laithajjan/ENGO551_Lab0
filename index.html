@@ -1,9 +1,102 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>My Webpage</title>
-    </head>
-    <body>
-        Hello, world!
-    </body>
-</html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./styling/global.css" />
+    <link rel="stylesheet" href="./styling/main.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.13.0/dist/umd/popper.min.js" integrity="sha384-cF5+j7VQgE2wW8bLf1rzrj+n9X9dW8G4/JZ4x/Vu0E5F5+jf5N/h5xLZtA9ZFcYm" crossorigin="anonymous"></script>
+
+    <title>Travel Site - Home</title>
+</head>
+
+<body>
+    <!-- Building the header navigation bar with an unordered list -->
+    <header class="header">
+        <nav class="nav">
+            <ul class="nav__list">
+                <li><a class="nav__list-header" href="./index.html">Favourite Destinations</a></li>
+                <li><a class="nav__list-destination nav__list-destination--visited" href="./index.html">Home</a></li>
+                <li><a class="nav__list-destination" href="./pages/barcelona.html">Barcelona</a></li>
+                <li><a class="nav__list-destination" href="./pages/paris.html">Paris</a></li>
+                <li><a class="nav__list-destination" href="./pages/rome.html">Rome</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Building the main section and having a container for each component of the section  -->
+        <!-- Hero section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero__textcontent-container">
+                    <h1 class="hero__header-primary">Discover the Charm of Europe: Explore the Beauty and Diversity of
+                        the Old World </h1>
+                    <p class="hero__paragraph"> Explore Europe's rich history, culture and beauty with us.</p>
+                    <a href="./pages/barcelona.html" class="btn btn-primary">Get Started</a>
+                </div>
+                <div class="hero__image-container">
+                    <img src="./assets/france.webp" class="hero__image" />
+                </div>
+            </div>
+        </section>
+        <!-- Recommendations section -->
+        <section class="recommendations">
+            <div class="container">
+                <h2 class="recommendations__header">Recommendations</h2>
+                <div class="recommendations__destinations-container">
+                    <a class="recommendations__destinations" href="./pages/barcelona.html"
+                        title="destination image">Barcelona</a>
+                    <a class="recommendations__destinations" href="./pages/paris.html"
+                        title="destination image">Paris</a>
+                    <a class="recommendations__destinations" href="./pages/rome.html" title="destination image">Rome</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__section">
+                <h3 class="footer__section-title">Contact</h3>
+                <div class="footer__section-container">
+                    <div>
+                        <p class="footer__section-tag">Email</p>
+                        <p class="footer__section-information">laithajjan@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__section">
+                <h3 class="footer__section-title">Hours</h3>
+                <div class="footer__section-container">
+                    <div>
+                        <p class="footer__section-tag">Monday - Friday</p>
+                        <p class="footer__section-information">9:00 AM - 5:00 PM</time>
+                    </div>
+                    <div>
+                        <p class="footer__section-tag">Saturday</p>
+                        <p class="footer__section-information">10:00 AM - 4:00 PM</time>
+                    </div>
+                    <div>
+                        <p class="footer__section-tag">Sunday</p>
+                        <p class="footer__section-information">Closed</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__section">
+                <h3 class="footer__section-title">Social</h3>
+                <div class="footer__section-container">
+                    <a href="https://www.instagram.com"><img class="footer__section-icon"
+                            src="./assets/icon-instagram.png" alt="instagram icon" /></a>
+                    <a href="https://www.facebook.com"><img class="footer__section-icon"
+                            src="./assets/icon-facebook.png" alt="facebook icon" /></a>
+                    <a href="https://www.twitter.com"><img class="footer__section-icon" src="./assets/icon-twitter.png"
+                            alt="twitter icon" /></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>

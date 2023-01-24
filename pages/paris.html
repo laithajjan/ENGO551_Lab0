@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../styling/global.css" />
+    <link rel="stylesheet" href="../styling/main.css" />
+    <link rel="stylesheet" href="../styling/destinations.css" />
+    <style>
+        /* Increase table size */
+        table {
+          font-size: 20px;
+        }
+        /* Add red borders */
+        table, td, th {
+          border: 2px solid red;
+        }
+        /* Add padding to cells */
+        td, th {
+          padding: 10px;
+        }
+        /* Add background color to table headings */
+        th {
+          background-color: #f2f2f2;
+        }
+        /* Add hover effect to table rows with a different color */
+        tbody tr:hover {
+          background-color: #ffb3b3;
+        }
+        /* Add background color to table*/
+        table{
+          background-color: #E5E5E5;
+        }
+      </style>
+    <title>Paris</title>
+</head>
+
+<body>
+    <!-- Building the header navigation list which is styled globally -->
+    <header class="header">
+        <nav class="nav">
+            <ul class="nav__list">
+                <li><a class="nav__list-header" href="../index.html">Favourite Destinations</a></li>
+                <li><a class="nav__list-destination nav__list-destination--visited" href="../index.html">Home</a></li>
+                <li><a class="nav__list-destination" href="barcelona.html">Barcelona</a></li>
+                <li><a class="nav__list-destination" href="paris.html">Paris</a></li>
+                <li><a class="nav__list-destination" href="rome.html">Rome</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Building the schedule for the destination -->
+        <section class="destination destination--paris">
+            <div class="container">
+                <h2 id="destination__header-title">Paris</h2>
+                <div class="destination__schedule">
+                    <div class="container">
+                        <table class="table">
+                          <tbody>
+                            <tr>
+                              <td class="col-4">Activities Recommended</td>
+                              <td class="col-4">Hotel Recommended</td>
+                              <td class="col-4">Price Per Day</td>
+                            </tr>
+                            <tr>
+                              <td class="col-4">Watch PSG</td>
+                              <td class="col-4">Novotel Paris</td>
+                              <td class="col-4">500 Euros</td>
+                            </tr>
+                            <tr>
+                              <td class="col-4">Sightseeing</td>
+                              <td class="col-4">Hotel Mercure</td>
+                              <td class="col-4">350 Euros</td>
+                            </tr>
+                            <tr>
+                              <td class="col-4">Try French Food</td>
+                              <td class="col-4">Hotel Lenox</td>
+                              <td class="col-4">700 Euros</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Building the footer section which is styled globally -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__section">
+                <h3 class="footer__section-title">Contact</h3>
+                <div class="footer__section-container">
+                    <div>
+                        <p class="footer__section-tag">Email</p>
+                        <p class="footer__section-information">info@travelsite.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__section">
+                <h3 class="footer__section-title">Hours</h3>
+                <div class="footer__section-container">
+                    <div>
+                        <p class="footer__section-tag">Monday - Friday</p>
+                        <p class="footer__section-information">9:00 AM - 5:00 PM</p>
+                    </div>
+                    <div>
+                        <p class="footer__section-tag">Saturday</p>
+                        <p class="footer__section-information">10:00 AM - 4:00 PM</p>
+                    </div>
+                    <div>
+                        <p class="footer__section-tag">Sunday</p>
+                        <p class="footer__section-information">Closed</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__section">
+                <h3 class="footer__section-title">Social</h3>
+                <div class="footer__section-container">
+                    <a href="https://www.instagram.com"><img class="footer__section-icon"
+                            src="../assets/icon-instagram.png" alt="instagram icon" /></a>
+                    <a href="https://www.facebook.com"><img class="footer__section-icon"
+                            src="../assets/icon-facebook.png" alt="facebook icon" /></a>
+                    <a href="https://www.twitter.com"><img class="footer__section-icon"
+                            src="../assets/icon-twitter.png" alt="twitter icon" /></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
